@@ -5,6 +5,9 @@
 
 int main()
 {
+    HWND hStd = GetConsoleWindow();
+    ShowWindow(hStd, SW_HIDE);
+
     STARTUPINFOA si;
     memset(&si, 0, sizeof(si));
     si.cb = sizeof(si);
